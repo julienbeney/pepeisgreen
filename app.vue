@@ -1,11 +1,10 @@
 <template>
-  <img class="pepe" src="pngegg3.png" />
+  <img class="pepe" src="/finalpepe.png" />
   <div class="grid-container">
     <a v-for="col in table" :href=col.link>
       <div
         class="square text-green-500 text-lg font-bold text-center p-10 rounded-lg"
-        id="table"
-        
+        id="table" 
       >
         <p >{{ col.text }}</p>
       </div>
@@ -39,31 +38,31 @@ export default defineComponent({
     table() {
       this.keys[0] = {text: "#3FB00B", link: "" }
       if (this.n===21){
-        this.keys[2] = {text: "VERIFY MEMBERSHIP", link: "" }
-        this.keys[6] = {text: "TWITTER", link: "https://www.twitter.com" }
+        this.keys[2] = {text: "VERIFY MEMBERSHIP (coming soon)", link: "" }
+        this.keys[6] = {text: "TWITTER", link: "https://twitter.com/pepeisgreen" }
         this.keys[8] = {text: "OPENSEA", link: "https://www.opensea.com" }
-        this.keys[10] = {text: "DISCORD", link: "" }
+        this.keys[10] = {text: "DISCORD (coming soon)", link: "" }
         this.keys[14] = {text: "MINT COMING SOON", link: "" }
         this.keys[17] = {text: "*/10,000", link: "" }
         this.keys[18] = {text: "ABOUT", link: "" }
       }
       if (this.n===24){
-        this.keys[5] = {text: "VERIFY MEMBERSHIP", link: "" }
-        this.keys[2] = {text: "TWITTER", link: "https://www.twitter.com" }
+        this.keys[5] = {text: "VERIFY MEMBERSHIP (coming soon)", link: "" }
+        this.keys[2] = {text: "TWITTER", link: "https://twitter.com/pepeisgreen" }
         this.keys[22] = {text: "OPENSEA", link: "https://www.opensea.com" }
-        this.keys[17] = {text: "DISCORD", link: "" }
+        this.keys[17] = {text: "DISCORD (coming soon)", link: "" }
         this.keys[9] = {text: "MINT COMING SOON", link: "" }
         this.keys[15] = {text: "*/10,000", link: "" }
         this.keys[18] = {text: "ABOUT", link: "" }
       }
       if (this.n===50){
-        this.keys[9] = {text: "VERIFY MEMBERSHIP", link: "" }
-        this.keys[14] = {text: "DISCORD", link: "https://www.opensea.com" }
-        this.keys[18] = {text: "TWITTER", link: "https://www.twitter.com" }
+        this.keys[9] = {text: "VERIFY MEMBERSHIP (coming soon)", link: "" }
+        this.keys[14] = {text: "DISCORD (coming soon)", link: "" }
+        this.keys[18] = {text: "TWITTER", link: "https://twitter.com/pepeisgreen" }
         this.keys[22] = {text: "*/10,000", link: "" }
         this.keys[26] = {text: "MINT COMING SOON", link: "" }
         this.keys[40] = {text: "ABOUT", link: "" }
-        this.keys[48] = {text: "OPENSEA", link: "" }
+        this.keys[48] = {text: "OPENSEA", link: "https://www.opensea.com" }
       }
       return this.keys;
     },
@@ -145,3 +144,4 @@ p {
   }
 }
 </style>
+
