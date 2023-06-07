@@ -3,6 +3,7 @@ export default {
     preset: 'vercel-edge',
   },
   modules: [
-    '@nuxtjs/tailwindcss'
-  ]
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts'
+    ],
 };

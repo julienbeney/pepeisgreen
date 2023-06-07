@@ -12,6 +12,7 @@
     "nuxt": "^3.0.0"
   },
   "dependencies": {
+    "@nuxtjs/google-fonts": "^3.0.1",
     "postcss": "^8.4.24"
   }
 }

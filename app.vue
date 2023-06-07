@@ -1,52 +1,147 @@
 <template>
-  <img class="pepe" src="pepe.png" />
-  <div class="grid grid-cols-10">
-    <div
-      v-for="col in table"
-      :key="col"
-      class="square text-green-500 text-lg font-bold text-center p-10"
-    >
-      {{ col }}
-    </div>
+  <img class="pepe" src="pngegg3.png" />
+  <div class="grid-container">
+    <a v-for="col in table" :href=col.link>
+      <div
+        class="square text-green-500 text-lg font-bold text-center p-10 rounded-lg"
+        id="table"
+        
+      >
+        <p >{{ col.text }}</p>
+      </div>
+    </a>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 
+interface Tail {
+  text: string,
+  link: string
+}
+
 export default defineComponent({
-  data() {
-    return {
-      keys: Array(50).fill(null),
-    };
-  },
   computed: {
+    n() {
+      if(window.innerWidth<900){
+        return 21
+      }
+      if(window.innerWidth<1200){
+        return 24
+      } else {
+        return 50
+      }
+    },
+    keys(): Array<Tail> {
+      return Array(this.n).fill({text: null, link: null})
+    },
     table() {
-      this.keys[26] = "MINT COMING SOON";
+      this.keys[0] = {text: "#3FB00B", link: "" }
+      if (this.n===21){
+        this.keys[2] = {text: "VERIFY MEMBERSHIP", link: "" }
+        this.keys[6] = {text: "TWITTER", link: "https://www.twitter.com" }
+        this.keys[8] = {text: "OPENSEA", link: "https://www.opensea.com" }
+        this.keys[10] = {text: "DISCORD", link: "" }
+        this.keys[14] = {text: "MINT COMING SOON", link: "" }
+        this.keys[17] = {text: "*/10,000", link: "" }
+        this.keys[18] = {text: "ABOUT", link: "" }
+      }
+      if (this.n===24){
+        this.keys[5] = {text: "VERIFY MEMBERSHIP", link: "" }
+        this.keys[2] = {text: "TWITTER", link: "https://www.twitter.com" }
+        this.keys[22] = {text: "OPENSEA", link: "https://www.opensea.com" }
+        this.keys[17] = {text: "DISCORD", link: "" }
+        this.keys[9] = {text: "MINT COMING SOON", link: "" }
+        this.keys[15] = {text: "*/10,000", link: "" }
+        this.keys[18] = {text: "ABOUT", link: "" }
+      }
+      if (this.n===50){
+        this.keys[9] = {text: "VERIFY MEMBERSHIP", link: "" }
+        this.keys[14] = {text: "DISCORD", link: "https://www.opensea.com" }
+        this.keys[18] = {text: "TWITTER", link: "https://www.twitter.com" }
+        this.keys[22] = {text: "*/10,000", link: "" }
+        this.keys[26] = {text: "MINT COMING SOON", link: "" }
+        this.keys[40] = {text: "ABOUT", link: "" }
+        this.keys[48] = {text: "OPENSEA", link: "" }
+      }
       return this.keys;
     },
+  },
+  methods: {
+
   },
 });
 </script>
 <style>
-.pepe {
-  position: fixed;
-  bottom: 20.2%;
-  right: 44.95%;
-  width: 25%;
-}
-.grid {
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  height: 100%;
+  width: 100%;
   background-color: #2c9e00;
 }
 .square {
-  height: 20vh;
-  width: 10vw;
-  border: 0.1em solid #3fb00b;
+  border: 0.05em solid #3fb00b;
   background-color: #3fb00b;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s ease-in-out;
 }
 .square:hover {
   border-color: #2c9e00;
   background-color: #2c9e00;
+  transform: rotate(20deg);
+}
+p {
+  font-family: "Inconsolata", monospace;
+  font-size: 12px;
+  line-height: 12px;
+}
+@media (min-width: 300px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .square {
+    height: 14.28vh;
+  }
+  .pepe {
+    position: fixed;
+    bottom: 17%;
+    right: 40.4%;
+    width: 50%;
+  }
+}
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .square {
+    height: 25vh;
+  }
+  .pepe {
+    position: fixed;
+    bottom: 27.2%;
+    right: 55.4%;
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .square {
+    height: 20vh;
+  }
+  .pepe {
+    position: fixed;
+    bottom: 20.2%;
+    right: 50.4%;
+    width: 19%;
+  }
 }
 </style>
