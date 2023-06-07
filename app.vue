@@ -83,7 +83,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   background-color: #2c9e00;
 }
 .square {
-  border: 0.05em solid #3fb00b;
+  border: 0.05em solid hsl(103, 100%, 23%);
   background-color: #3fb00b;
   cursor: pointer;
   display: flex;
@@ -92,14 +92,16 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   transition: transform 0.1s ease-in-out;
 }
 .square:hover {
-  border-color: #2c9e00;
-  background-color: #2c9e00;
+  border-color: hsl(103, 100%, 23%);
+  background-color:  #2c9e00;
   transform: rotate(20deg);
+  
 }
 p {
   font-family: "Inconsolata", monospace;
   font-size: 12px;
   line-height: 12px;
+  color: hsl(103, 100%, 23%);
 }
 @media (min-width: 300px) {
   .grid-container {
