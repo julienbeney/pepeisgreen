@@ -1,10 +1,31 @@
 <template>
-  <img class="pepe" src="/finalpepe.png" />
+  <img class="pepe open-modal" src="/finalpepe.png" />
+  <div style="z-index: 100" class="modal bg-white p-8 rounded-lg shadow-md">
+    <h1 class="text-2xl font-bold text-center mb-4">Our Mission</h1>
+    <p class="text-justify leading-relaxed">
+      Green celebrates the unique cultural impact of Pepe the Frog, along with
+      the diverse and creative world of Pepe memes. Our mission is to foster a
+      community that cherishes Pepe's endearing qualities, embracing the humor,
+      artistic expression, and camaraderie that Pepe represents. As an Affiliate
+      of Green we believe that Pepe is not just a meme; it is a symbol of unity,
+      freedom of expression, and the power of internet culture. Through our
+      project, we strive to promote inclusivity, open dialogue, and mutual
+      respect among Pepe enthusiasts. We aim to provide a platform where Pepe
+      enthusiasts can connect, collaborate, and contribute to the ongoing legacy
+      of Pepe, ensuring its enduring presence in popular culture. Together, let
+      us embrace the lightheartedness and joy that Pepe represents, while
+      promoting positivity and appreciation for the diverse range of Pepe memes.
+      Green is not just a project; it is a declaration of our affiliation, a
+      testament to our commitment, and an homage to the everlasting impact of
+      Pepe the Frog.
+    </p>
+  </div>
+  <div class="hidden-about open-modal"></div>
   <div class="grid-container">
     <a v-for="col in table" :href="col.link">
       <div
+        :class="col.class"
         class="square text-green-500 text-lg font-bold text-center p-10 rounded-lg"
-        id="table"
       >
         <p>{{ col.text }}</p>
       </div>
@@ -18,6 +39,7 @@ import { defineComponent } from "vue";
 interface Tail {
   text: string;
   link: string;
+  class: string;
 }
 
 export default defineComponent({
@@ -33,45 +55,108 @@ export default defineComponent({
       }
     },
     keys(): Array<Tail> {
-      return Array(this.n).fill({ text: null, link: null });
+      return Array(this.n).fill({ text: null, link: null, class: null });
     },
     table() {
-      this.keys[0] = { text: "#3FB00B", link: "" };
+      this.keys[0] = { text: "#3FB00B", link: "", class: "square-link" };
       if (this.n === 21) {
-        this.keys[2] = { text: "VERIFY MEMBERSHIP (coming soon)", link: "" };
+        this.keys[2] = {
+          text: "VERIFY MEMBERSHIP (coming soon)",
+          link: "",
+          class: "square-link",
+        };
         this.keys[6] = {
           text: "TWITTER",
           link: "https://twitter.com/pepeisgreen",
+          class: "square-link",
         };
-        this.keys[8] = { text: "OPENSEA", link: "https://www.opensea.com" };
-        this.keys[10] = { text: "DISCORD", link: "https://discord.com/invite/YxQ7TXqC" };
-        this.keys[14] = { text: "MINT COMING SOON", link: "" };
-        this.keys[17] = { text: "*/10,000", link: "" };
-        this.keys[18] = { text: "ABOUT", link: "" };
+        this.keys[8] = {
+          text: "OPENSEA",
+          link: "https://www.opensea.com",
+          class: "square-link",
+        };
+        this.keys[10] = {
+          text: "DISCORD",
+          link: "https://discord.com/invite/YxQ7TXqC",
+          class: "square-link",
+        };
+        this.keys[14] = {
+          text: "MINT (coming soon)",
+          link: "",
+          class: "square-link",
+        };
+        this.keys[17] = { text: "*/10,000", link: "", class: "square-link" };
+        this.keys[18] = {
+          text: "ABOUT",
+          link: "",
+          class: "square-link open-modal",
+        };
       }
       if (this.n === 24) {
-        this.keys[5] = { text: "VERIFY MEMBERSHIP (coming soon)", link: "" };
+        this.keys[5] = {
+          text: "VERIFY MEMBERSHIP (coming soon)",
+          link: "",
+          class: "square-link",
+        };
         this.keys[2] = {
           text: "TWITTER",
           link: "https://twitter.com/pepeisgreen",
+          class: "square-link",
         };
-        this.keys[22] = { text: "OPENSEA", link: "https://www.opensea.com" };
-        this.keys[17] = { text: "DISCORD", link: "https://discord.com/invite/YxQ7TXqC" };
-        this.keys[9] = { text: "MINT COMING SOON", link: "" };
-        this.keys[15] = { text: "*/10,000", link: "" };
-        this.keys[18] = { text: "ABOUT", link: "" };
+        this.keys[22] = {
+          text: "OPENSEA",
+          link: "https://www.opensea.com",
+          class: "square-link",
+        };
+        this.keys[17] = {
+          text: "DISCORD",
+          link: "https://discord.com/invite/YxQ7TXqC",
+          class: "square-link",
+        };
+        this.keys[9] = {
+          text: "MINT (coming soon)",
+          link: "",
+          class: "square-link",
+        };
+        this.keys[15] = { text: "*/10,000", link: "", class: "square-link" };
+        this.keys[18] = {
+          text: "ABOUT",
+          link: "",
+          class: "square-link open-modal",
+        };
       }
       if (this.n === 50) {
-        this.keys[9] = { text: "VERIFY MEMBERSHIP (coming soon)", link: "" };
-        this.keys[14] = { text: "DISCORD", link: "https://discord.com/invite/YxQ7TXqC" };
+        this.keys[9] = {
+          text: "VERIFY MEMBERSHIP (coming soon)",
+          link: "",
+          class: "square-link",
+        };
+        this.keys[14] = {
+          text: "DISCORD",
+          link: "https://discord.com/invite/YxQ7TXqC",
+          class: "square-link",
+        };
         this.keys[18] = {
           text: "TWITTER",
           link: "https://twitter.com/pepeisgreen",
+          class: "square-link",
         };
-        this.keys[22] = { text: "*/10,000", link: "" };
-        this.keys[26] = { text: "MINT COMING SOON", link: "" };
-        this.keys[40] = { text: "ABOUT", link: "" };
-        this.keys[48] = { text: "OPENSEA", link: "https://www.opensea.com" };
+        this.keys[22] = { text: "*/10,000", link: "", class: "square-link" };
+        this.keys[26] = {
+          text: "MINT (coming soon)",
+          link: "",
+          class: "square-link",
+        };
+        this.keys[40] = {
+          text: "ABOUT",
+          link: "",
+          class: "square-link open-modal",
+        };
+        this.keys[48] = {
+          text: "OPENSEA",
+          link: "https://www.opensea.com",
+          class: "square-link",
+        };
       }
       return this.keys;
     },
@@ -88,7 +173,7 @@ body {
 }
 
 .grid-container {
-  display: grid;
+  display:grid;
   grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   height: 100%;
   width: 100%;
@@ -97,6 +182,9 @@ body {
 .square {
   border: 0.05em solid hsl(103, 88%, 45%);
   background-color: #3fb00b;
+  display: flex;
+}
+.square-link {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -106,9 +194,22 @@ body {
 .square:hover {
   border-color: hsl(103, 87%, 30%);
   background-color: hsl(103, 87%, 30%);
+}
+.square-link:hover {
+  border-color: hsl(103, 87%, 30%);
+  background-color: hsl(103, 87%, 30%);
   transform: rotate(20deg);
 }
+.pepe {
+  z-index: 10;
+}
 p {
+  font-family: "Inconsolata", monospace;
+  font-size: 12px;
+  line-height: 10px;
+  color: hsl(103, 95%, 84%);
+}
+h1 {
   font-family: "Inconsolata", monospace;
   font-size: 12px;
   line-height: 10px;
@@ -127,6 +228,13 @@ p {
     right: 40.4%;
     width: 50%;
   }
+  .hidden-about {
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 14.28vh;
+  }
 }
 @media (min-width: 900px) {
   .grid-container {
@@ -140,6 +248,13 @@ p {
     bottom: 27.2%;
     right: 55.4%;
     width: 25%;
+  }
+  .hidden-about {
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 25vh;
   }
 }
 @media (min-width: 1200px) {
@@ -155,5 +270,31 @@ p {
     right: 50.4%;
     width: 19%;
   }
+  .hidden-about {
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 20vh;
+  }
+}
+.modal {
+  display: none;
+  border: 0.2em solid;
+  border-color: hsl(103, 88%, 45%);
+  background-color: #3fb00b;
+  justify-content: center;
+  align-items: center;
+  transition: transform 5s fade-in-out;
+}
+
+.open-modal:hover + .modal {
+  display: block;
+  position: absolute;
+  margin: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  z-index: 100;
 }
 </style>
