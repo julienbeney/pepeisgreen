@@ -106,7 +106,7 @@ body {
 .square:hover {
   border-color: hsl(103, 87%, 30%);
   background-color: hsl(103, 87%, 30%);
-  transform: rotate(10deg);
+  transform: rotate(20deg);
 }
 p {
   font-family: "Inconsolata", monospace;
