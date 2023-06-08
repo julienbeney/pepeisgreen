@@ -44,7 +44,7 @@ export default defineComponent({
           link: "https://twitter.com/pepeisgreen",
         };
         this.keys[8] = { text: "OPENSEA", link: "https://www.opensea.com" };
-        this.keys[10] = { text: "DISCORD (coming soon)", link: "" };
+        this.keys[10] = { text: "DISCORD", link: "https://discord.com/invite/YxQ7TXqC" };
         this.keys[14] = { text: "MINT COMING SOON", link: "" };
         this.keys[17] = { text: "*/10,000", link: "" };
         this.keys[18] = { text: "ABOUT", link: "" };
@@ -56,14 +56,14 @@ export default defineComponent({
           link: "https://twitter.com/pepeisgreen",
         };
         this.keys[22] = { text: "OPENSEA", link: "https://www.opensea.com" };
-        this.keys[17] = { text: "DISCORD (coming soon)", link: "" };
+        this.keys[17] = { text: "DISCORD", link: "https://discord.com/invite/YxQ7TXqC" };
         this.keys[9] = { text: "MINT COMING SOON", link: "" };
         this.keys[15] = { text: "*/10,000", link: "" };
         this.keys[18] = { text: "ABOUT", link: "" };
       }
       if (this.n === 50) {
         this.keys[9] = { text: "VERIFY MEMBERSHIP (coming soon)", link: "" };
-        this.keys[14] = { text: "DISCORD (coming soon)", link: "" };
+        this.keys[14] = { text: "DISCORD", link: "https://discord.com/invite/YxQ7TXqC" };
         this.keys[18] = {
           text: "TWITTER",
           link: "https://twitter.com/pepeisgreen",
