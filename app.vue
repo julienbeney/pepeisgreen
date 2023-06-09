@@ -20,7 +20,6 @@
       Pepe the Frog.
     </p>
   </div>
-  <div class="hidden-about open-modal"></div>
   <div class="grid-container">
     <a v-for="col in table" :href="col.link">
       <div
@@ -85,12 +84,12 @@ export default defineComponent({
           link: "",
           class: "square-link",
         };
-        this.keys[17] = { text: "*/10,000", link: "", class: "square-link" };
-        this.keys[18] = {
-          text: "ABOUT",
-          link: "",
-          class: "square-link open-modal",
-        };
+        this.keys[17] = { text: "*/10,000", link: "", class: "square-link shadow-inner shadow-2xl" };
+        // this.keys[18] = {
+        //   text: "ABOUT",
+        //   link: "",
+        //   class: "square-link open-modal",
+        // };
       }
       if (this.n === 24) {
         this.keys[5] = {
@@ -116,14 +115,14 @@ export default defineComponent({
         this.keys[9] = {
           text: "MINT (coming soon)",
           link: "",
-          class: "square-link",
+          class: "square-link shadow-inner shadow-2xl",
         };
         this.keys[15] = { text: "*/10,000", link: "", class: "square-link" };
-        this.keys[18] = {
-          text: "ABOUT",
-          link: "",
-          class: "square-link open-modal",
-        };
+        // this.keys[18] = {
+        //   text: "ABOUT",
+        //   link: "",
+        //   class: "square-link open-modal",
+        // };
       }
       if (this.n === 50) {
         this.keys[9] = {
@@ -141,17 +140,17 @@ export default defineComponent({
           link: "https://twitter.com/pepeisgreen",
           class: "square-link",
         };
-        this.keys[22] = { text: "*/10,000", link: "", class: "square-link" };
+        this.keys[31] = { text: "*/10,000", link: "", class: "square-link" };
         this.keys[26] = {
           text: "MINT (coming soon)",
           link: "",
-          class: "square-link",
+          class: "square-link shadow-inner shadow-2xl",
         };
-        this.keys[40] = {
-          text: "ABOUT",
-          link: "",
-          class: "square-link open-modal",
-        };
+        // this.keys[40] = {
+        //   text: "ABOUT",
+        //   link: "",
+        //   class: "square-link open-modal",
+        // };
         this.keys[48] = {
           text: "OPENSEA",
           link: "https://www.opensea.com",
@@ -228,13 +227,6 @@ h1 {
     right: 40.4%;
     width: 50%;
   }
-  .hidden-about {
-    z-index: 10;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 14.28vh;
-  }
 }
 @media (min-width: 900px) {
   .grid-container {
@@ -245,16 +237,9 @@ h1 {
   }
   .pepe {
     position: fixed;
-    bottom: 27.2%;
+    bottom: 10%;
     right: 55.4%;
-    width: 25%;
-  }
-  .hidden-about {
-    z-index: 10;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 25vh;
+    width: 32%;
   }
 }
 @media (min-width: 1200px) {
@@ -266,16 +251,9 @@ h1 {
   }
   .pepe {
     position: fixed;
-    bottom: 20.2%;
+    bottom: 5.2%;
     right: 50.4%;
-    width: 19%;
-  }
-  .hidden-about {
-    z-index: 10;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 20vh;
+    width: 27%;
   }
 }
 .modal {
@@ -291,7 +269,7 @@ h1 {
 .open-modal:hover + .modal {
   display: block;
   position: absolute;
-  margin: 10%;
+  margin: 5%;
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 5%;
