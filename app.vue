@@ -1,4 +1,5 @@
 <template>
+ 
   <img class="pepe open-modal" src="/finalpepe.png" />
   <div style="z-index: 100" class="modal bg-white p-8 rounded-lg shadow-md">
     <h1 class="text-2xl font-bold text-center mb-4">Our Mission</h1>
@@ -30,6 +31,7 @@
       </div>
     </a>
   </div>
+ 
 </template>
 
 <script lang="ts">
@@ -76,7 +78,7 @@ export default defineComponent({
         };
         this.keys[10] = {
           text: "DISCORD",
-          link: "https://discord.com/invite/YxQ7TXqC",
+          link: "https://discord.com/invite/Vy2rjVAk",
           class: "square-link",
         };
         this.keys[14] = {
@@ -109,7 +111,7 @@ export default defineComponent({
         };
         this.keys[17] = {
           text: "DISCORD",
-          link: "https://discord.com/invite/YxQ7TXqC",
+          link: "https://discord.com/invite/Vy2rjVAk",
           class: "square-link",
         };
         this.keys[9] = {
@@ -132,7 +134,7 @@ export default defineComponent({
         };
         this.keys[14] = {
           text: "DISCORD",
-          link: "https://discord.com/invite/YxQ7TXqC",
+          link: "https://discord.com/invite/Vy2rjVAk",
           class: "square-link",
         };
         this.keys[18] = {
