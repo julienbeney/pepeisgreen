@@ -1,7 +1,7 @@
 <template>
   <img class="pepe" src="/finalpepecolor.png" />
   <div class="grid-container">
-    <div v-for="col in table" :onclick="col.click">
+    <div v-for="col in table" @click="col.click">
       <a v-if="col.link !== ''" :href="col.link">
         <div
           :class="col.class"
@@ -25,8 +25,8 @@
     class="smooth-transition visible modal page-display fixed inset-x-0 inset-y-0 bg-gray-400 m-10 p-5 p-0-sm rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-xl"
   >
     <button
-      :onclick="openModalAbout()"
-      class="fixed top-3 right-3 bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-2 rounded-full inline-flex items-center"
+      @click="openModalAbout"
+      class="fixed top-15 right-15 bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-2 rounded-full inline-flex items-center"
     >
       <svg
         class="fill-current w-4 h-4"
@@ -39,7 +39,7 @@
       </svg>
     </button>
     <div class="justify-center space-x-8">
-      <h1 class="text-3xl font-bold text-center m-4">Our Mission</h1>
+      <h1 class="text-3xl font-bold text-center m-4">ABOUT</h1>
       <p class="text-justify leading-relaxed sm:px-6 p-8 md:px-30 xl:px-40">
         WHAT IS #3FB00B? #3FB00B is a distinctive Proof of Involvement NFT that
         serves multiple purposes within the $PEPE Community. This NFT not only
@@ -87,8 +87,8 @@
     class="smooth-transition visible modal page-display fixed inset-x-0 inset-y-0 bg-gray-400 m-10 p-5 p-0-sm rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-xl"
   >
     <button
-      :onclick="openModalMission()"
-      class="fixed top-3 right-3 bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-2 rounded-full inline-flex items-center"
+      @click="openModalMission"
+      class="fixed top-15 right-15  bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-2 rounded-full inline-flex items-center"
     >
       <svg
         class="fill-current w-4 h-4"
@@ -143,6 +143,100 @@
       </p>
     </div>
   </div>
+  <div
+    v-if="PROOF"
+    style="z-index: 100"
+    class="smooth-transition visible modal page-display fixed inset-x-0 inset-y-0 bg-gray-400 m-10 p-5 p-0-sm rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-xl"
+  >
+    <button
+      @click="openModalProof"
+      class="fixed top-15 right-15 bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-2 rounded-full inline-flex items-center"
+    >
+      <svg
+        class="fill-current w-4 h-4"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"
+        />
+      </svg>
+    </button>
+    <div class="justify-center space-x-8">
+      <h1 class="text-xl font-bold text-center m-4">PROOF BASE</h1>
+      <p class="text-justify leading-relaxed sm:px-6 p-8 md:px-30 xl:px-40">
+        Verify your membership via the “3FB00B” NFT, establishing color
+        consensus and accessing premium features enabled by our organization.
+        Benefit from the proprietary Lily-Pad and have access to unique
+        utilities and experiences. PROOF GREEN Link your Twitter handle and
+        verify your membership via the “3FB00B” Affiliate Badge, establishing
+        color consensus and accessing premium features enabled by our
+        organization. Benefit from the proprietary Lily-Pad and have access to
+        unique utilities and experiences.
+      </p>
+      <h1 class="text-xl font-bold text-center m-4">PROOF GREEN</h1>
+      <p class="text-justify leading-relaxed sm:px-6 p-8 md:px-30 xl:px-40">
+        Link your Twitter handle and verify your membership via the “3FB00B”
+        Affiliate Badge, establishing color consensus and accessing premium
+        features enabled by our organization. Benefit from the proprietary
+        Lily-Pad and have access to unique utilities and experiences.
+      </p>
+    </div>
+  </div>
+  <div
+    v-if="APPLY"
+    style="z-index: 100"
+    class="smooth-transition visible modal page-display fixed inset-x-0 inset-y-0 bg-gray-400 m-10 p-5 p-0-sm rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-xl"
+  >
+    <button
+      @click="openModalApply"
+      class="fixed top-15 right-15  bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-2 rounded-full inline-flex items-center"
+    >
+      <svg
+        class="fill-current w-4 h-4"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"
+        />
+      </svg>
+    </button>
+    <div class="justify-center space-x-8">
+      <h1 class="text-3xl font-bold text-center m-4">APPLY</h1>
+      <p class="text-justify leading-relaxed sm:px-6 p-8 md:px-30 xl:px-40">
+        LILY-PAD (APPLY) Dear Artists, Creators, and Builders, We are excited to
+        invite you to apply and become a part of #3FB00B LILY-PAD, the curated
+        sub-community within the vibrant $PEPE ecosystem. As passionate
+        advocates for digital art and creativity, we are actively seeking
+        talented individuals like you who are dedicated to pushing the
+        boundaries of innovation and creating captivating experiences. #3FB00B
+        LILY-PAD serves as a platform for discovering new artists, creators, and
+        builders who are shaping the future of Web3 projects. We believe in the
+        power of collaboration and the potential to support and showcase
+        exceptional talent within our community. By joining #3FB00B, you’ll have
+        the opportunity to connect with a dedicated audience and receive the
+        recognition your work deserves. If you have an innovative project that
+        aligns with the ethos of #3FB00B, values and spirit of the $PEPE
+        Community, we encourage you to apply for curation within #3FB00B. Our
+        curated selection process ensures that only the most exceptional
+        projects are showcased to our passionate community members. By being a
+        part of #3FB00B, you’ll have access to invaluable resources, support,
+        and opportunities for growth. To apply, please submit your project for
+        consideration by providing relevant details, such as a description,
+        portfolio, or demo, showcasing the unique qualities and vision of your
+        work. Our team of experienced curators will carefully review each
+        submission, evaluating its alignment with the community’s values and
+        potential impact. Photo de profil de bitcoin.baddie We look forward to
+        discovering the incredible talent within the artist, creator, and
+        builder community and supporting your initiatives to thrive within the
+        #3FB00B sub-community. Together, we can shape the future of Web3
+        projects and create a dynamic environment that fosters creativity,
+        collaboration, and success. Apply now and let your vision shine within
+        the vibrant $PEPE Community! Best regards, #3FB00B Curatorial Team
+      </p>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -158,8 +252,10 @@ interface Tail {
 export default defineComponent({
   data() {
     return {
-      ABOUT: true,
+      ABOUT: false,
       MISSION: false,
+      PROOF: false,
+      APPLY: false,
     };
   },
   computed: {
@@ -184,10 +280,16 @@ export default defineComponent({
         class: "square-link",
       };
       if (this.n === 21) {
-        this.keys[2] = {
-          text: "BASE & PROOF",
+        this.keys[1] = {
+          text: "APPLY ",
           link: "",
-          click: () => null,
+          click: this.openModalApply,
+          class: "square-link",
+        };
+        this.keys[2] = {
+          text: "BASE & PROOF ",
+          link: "",
+          click: this.openModalProof,
           class: "square-link",
         };
         this.keys[6] = {
@@ -202,7 +304,7 @@ export default defineComponent({
           click: () => null,
           class: "square-link",
         };
-        this.keys[10] = {
+        this.keys[19] = {
           text: "DISCORD",
           link: "https://discord.com/invite/Vy2rjVAk",
           click: () => null,
@@ -224,13 +326,25 @@ export default defineComponent({
         this.keys[5] = {
           text: "BASE & PROOF",
           link: "",
-          click: () => null,
+          click: this.openModal,
           class: "square-link",
         };
         this.keys[2] = {
           text: "TWITTER",
           link: "https://twitter.com/pepeisgreen",
           click: () => null,
+          class: "square-link",
+        };
+        this.keys[6] = {
+          text: "APPLY",
+          link: "",
+          click: this.openModalApply,
+          class: "square-link",
+        };
+        this.keys[5] = {
+          text: "BASE & PROOF",
+          link: "",
+          click: this.openModalProof,
           class: "square-link",
         };
         this.keys[22] = {
@@ -262,13 +376,13 @@ export default defineComponent({
         this.keys[5] = {
           text: "APPLY",
           link: "",
-          click: () => null,
+          click: this.openModalApply,
           class: "square-link",
         };
         this.keys[9] = {
           text: "BASE & PROOF",
           link: "",
-          click: () => null,
+          click: this.openModalProof,
           class: "square-link",
         };
         this.keys[14] = {
@@ -290,12 +404,12 @@ export default defineComponent({
           click: () => null,
           class: "square-link shadow-inner shadow-2xl",
         };
-        this.keys[40] = {
-          text: "MISSION",
-          link: "",
-          click: this.openModalMission,
-          class: "square-link",
-        };
+        // this.keys[40] = {
+        //   text: "MISSION",
+        //   link: "",
+        //   click: this.openModalMission,
+        //   class: "square-link",
+        // };
         this.keys[48] = {
           text: "OPENSEA",
           link: "https://www.opensea.com",
@@ -308,10 +422,24 @@ export default defineComponent({
   },
   methods: {
     openModalAbout() {
+      console.log(this.ABOUT);
       this.ABOUT = !this.ABOUT;
+      console.log(this.ABOUT);
     },
     openModalMission() {
+      console.log(this.MISSION);
       this.MISSION = !this.MISSION;
+      console.log(this.MISSION);
+    },
+    openModalProof() {
+      console.log(this.PROOF);
+      this.PROOF = !this.PROOF;
+      console.log(this.PROOF);
+    },
+    openModalApply() {
+      console.log(this.APPLY);
+      this.APPLY = !this.APPLY;
+      console.log(this.APPLY);
     },
   },
 });
