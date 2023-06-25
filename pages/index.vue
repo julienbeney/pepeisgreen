@@ -88,14 +88,14 @@
     </button>
     <div class="justify-center">
       <h1 class="text-3xl font-bold text-center my-4">PROOF BASE</h1>
-      <h2>BASE #3FB00B</h2>
+      <h2  class="mx-2 text-2xl">>BASE #3FB00B</h2>
       <p 
         
         class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
         Verify your membership via the “3FB00B” NFT, establishing color consensus and accessing premium features enabled by our organization. Benefit from the proprietary Lily-Pad and have access to unique utilities and experiences.
       </p>
       <br/>
-      <h2>PROOF #3FB00B</h2>
+      <h2  class="mx-2 text-2xl">>PROOF #3FB00B</h2>
       <p 
       
       class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
