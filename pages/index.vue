@@ -22,7 +22,7 @@
   <div
     v-if="ABOUT"
     style="z-index: 100"
-    class="smooth-transition visible modal page-display fixed inset-x-0 inset-y-0 bg-gray-400 m-10 p-5 p-0-sm rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-xl"
+    class="smooth-transition visible modal page-display fixed inset-x-0 inset-y-0 bg-gray-400 m-1 p-1 lg:m-12 lg:p-12 rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-xl"
   >
     <button
       @click="openModalAbout"
@@ -38,115 +38,34 @@
         />
       </svg>
     </button>
-    <div class="justify-center space-x-8">
-      <h1 class="text-3xl font-bold text-center m-4">ABOUT</h1>
-      <p class="text-justify leading-relaxed sm:px-6 p-8 md:px-30 xl:px-40">
-        WHAT IS #3FB00B? #3FB00B is a distinctive Proof of Involvement NFT that
-        serves multiple purposes within the $PEPE Community. This NFT not only
-        symbolizes your membership to #3FB00B but also represents your stake in
-        promoting and raising awareness about the community as a whole. The
-        captivating colors used in the #3FB00B NFT artwork are carefully chosen
-        to reflect and embody the essence and spirit of the $PEPE Community. The
-        vibrant and engaging visuals serve as a visual representation of the
-        community's energy, creativity, and shared values. By owning a #3FB00B
-        NFT, you gain exclusive utilities and opportunities.\n These utilities
-        may include early access to new features, events, or projects within the
-        $PEPE ecosystem. Additionally, as a #3FB00B NFT holder, you become
-        eligible for future utilities and benefits that are specifically
-        designed to enhance your experience and engagement within the community.
-        Being an #3FB00B NFT holder not only grants you access to exciting
-        opportunities but also positions you as an active participant and
-        supporter of the $PEPE Community. Your ownership of this unique NFT
-        demonstrates your dedication and involvement in the community's growth
-        and development. WHY WAS #3FB00B CREATED? #3FB00B was created as a
-        dedicated sub-community within the broader $PEPE ecosystem. Its primary
-        purpose is to foster an environment where passionate $PEPE enthusiasts
-        can come together and actively engage with various artists, creators,
-        and builders. By being a part of #3FB00B, members gain exclusive access
-        to curated Web3 projects, enabling them to discover and support new
-        talent and innovative initiatives. The creation of #3FB00B serves as a
-        platform for the community to explore and embrace the diverse and
-        evolving world of digital art and creativity. Through this
-        sub-community, members have the unique opportunity to connect with
-        emerging artists and creators, discovering their unique perspectives and
-        contributing to their growth and success. By focusing on curated Web3
-        projects, #3FB00B ensures that the initiatives supported are carefully
-        selected and aligned with the ethos and interests of the $PEPE
-        Community. This curated approach not only helps members find exciting
-        and innovative projects but also empowers artists and builders by
-        providing them with a dedicated audience and potential support for their
-        work. Overall, #3FB00B aims to create a thriving ecosystem within the
-        $PEPE Community, fostering collaboration, discovery, and support for
-        artists, creators, and builders in the Web3 space.
+    <div class="justify-center">
+      <h1 class="text-3xl font-bold text-center my-4">ABOUT</h1>
+      <h3>WHAT IS #3FB00B?</h3>
+      <p         
+        class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
+        #3FB00B is a distinctive Proof of Involvement NFT that serves multiple purposes within the $PEPE Community. This NFT not only symbolizes your membership to #3FB00B but also represents your stake in promoting and raising awareness about the community as a whole.
+        <br/>The captivating colors used in the #3FB00B NFT artwork are carefully chosen to reflect and embody the essence and spirit of the $PEPE Community. The vibrant and engaging visuals serve as a visual representation of the community's energy, creativity, and shared values.
+        <br/>By owning a #3FB00B NFT, you gain exclusive utilities and opportunities. These utilities may include early access to new features, events, or projects within the $PEPE ecosystem. Additionally, as a #3FB00B NFT holder, you become eligible for future utilities and benefits that are specifically designed to enhance your experience and engagement within the community.
+        <br/>Being an #3FB00B NFT holder not only grants you access to exciting opportunities but also positions you as an active participant and supporter of the $PEPE Community. Your ownership of this unique NFT demonstrates your dedication and involvement in the community's growth and development.
+        <br/>
       </p>
+      <h3>WHY WAS #3FB00B CREATED?</h3>
+      <p    
+        class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
+        #3FB00B was created as a dedicated sub-community within the broader $PEPE ecosystem. Its primary purpose is to foster an environment where passionate $PEPE enthusiasts can come together and actively engage with various artists, creators, and builders. By being a part of #3FB00B, members gain exclusive access to curated Web3 projects, enabling them to discover and support new talent and innovative initiatives.
+        <br/>The creation of #3FB00B serves as a platform for the community to explore and embrace the diverse and evolving world of digital art and creativity. Through this sub-community, members have the unique opportunity to connect with emerging artists and creators, discovering their unique perspectives and contributing to their growth and success.
+        <br/>By focusing on curated Web3 projects, #3FB00B ensures that the initiatives supported are carefully selected and aligned with the ethos and interests of the $PEPE Community. This curated approach not only helps members find exciting and innovative projects but also empowers artists and builders by providing them with a dedicated audience and potential support for their work.
+        <br/>Overall, #3FB00B aims to create a thriving ecosystem within the $PEPE Community, fostering collaboration, discovery, and support for artists, creators, and builders in the Web3 space.
+      </p>
+      <h1 class="text-3xl font-bold text-center my-4">OUR MISSION</h1>
+
     </div>
   </div>
-  <div
-    v-if="MISSION"
-    style="z-index: 100"
-    class="smooth-transition visible modal page-display fixed inset-x-0 inset-y-0 bg-gray-400 m-10 p-5 p-0-sm rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-xl"
-  >
-    <button
-      @click="openModalMission"
-      class="fixed top-15 right-15  bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-2 rounded-full inline-flex items-center"
-    >
-      <svg
-        class="fill-current w-4 h-4"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-      >
-        <path
-          d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"
-        />
-      </svg>
-    </button>
-    <div class="justify-center space-x-8">
-      <h1 class="text-3xl font-bold text-center m-4">Our Mission</h1>
-      <p class="text-justify leading-relaxed sm:px-6 p-8 md:px-30 xl:px-40">
-        WHAT IS #3FB00B? #3FB00B is a distinctive Proof of Involvement NFT that
-        serves multiple purposes within the $PEPE Community. This NFT not only
-        symbolizes your membership to #3FB00B but also represents your stake in
-        promoting and raising awareness about the community as a whole. The
-        captivating colors used in the #3FB00B NFT artwork are carefully chosen
-        to reflect and embody the essence and spirit of the $PEPE Community. The
-        vibrant and engaging visuals serve as a visual representation of the
-        community's energy, creativity, and shared values. By owning a #3FB00B
-        NFT, you gain exclusive utilities and opportunities.\n These utilities
-        may include early access to new features, events, or projects within the
-        $PEPE ecosystem. Additionally, as a #3FB00B NFT holder, you become
-        eligible for future utilities and benefits that are specifically
-        designed to enhance your experience and engagement within the community.
-        Being an #3FB00B NFT holder not only grants you access to exciting
-        opportunities but also positions you as an active participant and
-        supporter of the $PEPE Community. Your ownership of this unique NFT
-        demonstrates your dedication and involvement in the community's growth
-        and development. WHY WAS #3FB00B CREATED? #3FB00B was created as a
-        dedicated sub-community within the broader $PEPE ecosystem. Its primary
-        purpose is to foster an environment where passionate $PEPE enthusiasts
-        can come together and actively engage with various artists, creators,
-        and builders. By being a part of #3FB00B, members gain exclusive access
-        to curated Web3 projects, enabling them to discover and support new
-        talent and innovative initiatives. The creation of #3FB00B serves as a
-        platform for the community to explore and embrace the diverse and
-        evolving world of digital art and creativity. Through this
-        sub-community, members have the unique opportunity to connect with
-        emerging artists and creators, discovering their unique perspectives and
-        contributing to their growth and success. By focusing on curated Web3
-        projects, #3FB00B ensures that the initiatives supported are carefully
-        selected and aligned with the ethos and interests of the $PEPE
-        Community. This curated approach not only helps members find exciting
-        and innovative projects but also empowers artists and builders by
-        providing them with a dedicated audience and potential support for their
-        work. Overall, #3FB00B aims to create a thriving ecosystem within the
-        $PEPE Community, fostering collaboration, discovery, and support for
-        artists, creators, and builders in the Web3 space.
-      </p>
-    </div>
-  </div>
+
   <div
     v-if="PROOF"
     style="z-index: 100"
-    class="smooth-transition visible modal page-display fixed inset-x-0 inset-y-0 bg-gray-400 m-10 p-5 p-0-sm rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-xl"
+    class="smooth-transition visible modal page-display fixed inset-x-0 inset-y-0 bg-gray-400 m-1 p-1 lg:m-12 lg:p-12 rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-xl"
   >
     <button
       @click="openModalProof"
@@ -162,35 +81,30 @@
         />
       </svg>
     </button>
-    <div class="justify-center space-x-8">
-      <h1 class="text-xl font-bold text-center m-4">PROOF BASE</h1>
-      <p class="text-justify leading-relaxed sm:px-6 p-8 md:px-30 xl:px-40">
-        Verify your membership via the “3FB00B” NFT, establishing color
-        consensus and accessing premium features enabled by our organization.
-        Benefit from the proprietary Lily-Pad and have access to unique
-        utilities and experiences. PROOF GREEN Link your Twitter handle and
-        verify your membership via the “3FB00B” Affiliate Badge, establishing
-        color consensus and accessing premium features enabled by our
-        organization. Benefit from the proprietary Lily-Pad and have access to
-        unique utilities and experiences.
+    <div class="justify-center">
+      <h1 class="text-3xl font-bold text-center my-4">PROOF BASE</h1>
+      <h3>BASE #3FB00B</h3>
+      <p 
+        
+        class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
+        Verify your membership via the “3FB00B” NFT, establishing color consensus and accessing premium features enabled by our organization. Benefit from the proprietary Lily-Pad and have access to unique utilities and experiences.
       </p>
-      <h1 class="text-xl font-bold text-center m-4">PROOF GREEN</h1>
-      <p class="text-justify leading-relaxed sm:px-6 p-8 md:px-30 xl:px-40">
-        Link your Twitter handle and verify your membership via the “3FB00B”
-        Affiliate Badge, establishing color consensus and accessing premium
-        features enabled by our organization. Benefit from the proprietary
-        Lily-Pad and have access to unique utilities and experiences.
+      <h3>PROOF #3FB00B</h3>
+      <p 
+      
+      class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
+        Link your Twitter handle and verify your membership via the “3FB00B” Affiliate Badge, establishing color consensus and accessing premium features enabled by our organization. Benefit from the proprietary Lily-Pad and have access to unique utilities and experiences.
       </p>
     </div>
   </div>
   <div
     v-if="APPLY"
     style="z-index: 100"
-    class="smooth-transition visible modal page-display fixed inset-x-0 inset-y-0 bg-gray-400 m-10 p-5 p-0-sm rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-xl"
+    class="smooth-transition visible modal page-display fixed inset-x-0 inset-y-0 bg-gray-400 m-1 p-1 lg:m-12 lg:p-12 rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-xl"
   >
     <button
       @click="openModalApply"
-      class="fixed top-15 right-15  bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-2 rounded-full inline-flex items-center"
+      class="fixed top-15 right-15 bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-2 rounded-full inline-flex items-center"
     >
       <svg
         class="fill-current w-4 h-4"
@@ -202,38 +116,49 @@
         />
       </svg>
     </button>
-    <div class="justify-center space-x-8">
-      <h1 class="text-3xl font-bold text-center m-4">APPLY</h1>
-      <p class="text-justify leading-relaxed sm:px-6 p-8 md:px-30 xl:px-40">
-        LILY-PAD (APPLY) Dear Artists, Creators, and Builders, We are excited to
-        invite you to apply and become a part of #3FB00B LILY-PAD, the curated
-        sub-community within the vibrant $PEPE ecosystem. As passionate
-        advocates for digital art and creativity, we are actively seeking
-        talented individuals like you who are dedicated to pushing the
-        boundaries of innovation and creating captivating experiences. #3FB00B
-        LILY-PAD serves as a platform for discovering new artists, creators, and
-        builders who are shaping the future of Web3 projects. We believe in the
-        power of collaboration and the potential to support and showcase
-        exceptional talent within our community. By joining #3FB00B, you’ll have
-        the opportunity to connect with a dedicated audience and receive the
-        recognition your work deserves. If you have an innovative project that
-        aligns with the ethos of #3FB00B, values and spirit of the $PEPE
-        Community, we encourage you to apply for curation within #3FB00B. Our
-        curated selection process ensures that only the most exceptional
-        projects are showcased to our passionate community members. By being a
-        part of #3FB00B, you’ll have access to invaluable resources, support,
-        and opportunities for growth. To apply, please submit your project for
-        consideration by providing relevant details, such as a description,
-        portfolio, or demo, showcasing the unique qualities and vision of your
-        work. Our team of experienced curators will carefully review each
-        submission, evaluating its alignment with the community’s values and
-        potential impact. Photo de profil de bitcoin.baddie We look forward to
-        discovering the incredible talent within the artist, creator, and
-        builder community and supporting your initiatives to thrive within the
-        #3FB00B sub-community. Together, we can shape the future of Web3
-        projects and create a dynamic environment that fosters creativity,
-        collaboration, and success. Apply now and let your vision shine within
-        the vibrant $PEPE Community! Best regards, #3FB00B Curatorial Team
+    <div class="justify-center">
+      <h1 class="text-3xl font-bold text-center my-4">LILY-PAD</h1>
+      <p
+        
+        class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40"
+      >
+        Dear Artists, Creators, and Builders,
+        <br />
+        <br />
+        <br />We are excited to invite you to apply and become a part of #3FB00B
+        LILY-PAD, the curated sub-community within the vibrant $PEPE ecosystem.
+        As passionate advocates for digital art and creativity, we are actively
+        seeking talented individuals like you who are dedicated to pushing the
+        boundaries of innovation and creating captivating experiences.
+        <br /><br />#3FB00B LILY-PAD serves as a platform for discovering new artists,
+        creators, and builders who are shaping the future of Web3 projects. We
+        believe in the power of collaboration and the potential to support and
+        showcase exceptional talent within our community. By joining #3FB00B,
+        you’ll have the opportunity to connect with a dedicated audience and
+        receive the recognition your work deserves.
+        <br /><br />If you have an innovative project that aligns with the ethos of
+        #3FB00B, values and spirit of the $PEPE Community, we encourage you to
+        apply for curation within #3FB00B. Our curated selection process ensures
+        that only the most exceptional projects are showcased to our passionate
+        community members. By being a part of #3FB00B, you’ll have access to
+        invaluable resources, support, and opportunities for growth.
+        <br />
+        <br />To apply, please submit your project for consideration by
+        providing relevant details, such as a description, portfolio, or demo,
+        showcasing the unique qualities and vision of your work. Our team of
+        experienced curators will carefully review each submission, evaluating
+        its alignment with the community’s values and potential impact.
+        <br />
+        <br />We look forward to discovering the incredible talent within the
+        artist, creator, and builder community and supporting your initiatives
+        to thrive within the #3FB00B sub-community. Together, we can shape the
+        future of Web3 projects and create a dynamic environment that fosters
+        creativity, collaboration, and success. Apply now and let your vision
+        shine within the vibrant $PEPE Community!
+        <br />
+        <br />
+        Best regards,<br />
+        #3FB00B Curatorial Team
       </p>
     </div>
   </div>
@@ -281,13 +206,13 @@ export default defineComponent({
       };
       if (this.n === 21) {
         this.keys[1] = {
-          text: "APPLY ",
+          text: "LILY-PAD ",
           link: "",
           click: this.openModalApply,
           class: "square-link",
         };
         this.keys[2] = {
-          text: "BASE & PROOF ",
+          text: "BASE & PROOF VERIFICATION ",
           link: "",
           click: this.openModalProof,
           class: "square-link",
@@ -324,7 +249,7 @@ export default defineComponent({
       }
       if (this.n === 24) {
         this.keys[5] = {
-          text: "BASE & PROOF",
+          text: "BASE & PROOF VERIFICATION",
           link: "",
           click: this.openModal,
           class: "square-link",
@@ -336,13 +261,13 @@ export default defineComponent({
           class: "square-link",
         };
         this.keys[6] = {
-          text: "APPLY",
+          text: "LILY-PAD",
           link: "",
           click: this.openModalApply,
           class: "square-link",
         };
         this.keys[5] = {
-          text: "BASE & PROOF",
+          text: "BASE & PROOF VERIFICATION",
           link: "",
           click: this.openModalProof,
           class: "square-link",
@@ -374,13 +299,13 @@ export default defineComponent({
       }
       if (this.n === 50) {
         this.keys[5] = {
-          text: "APPLY",
+          text: "LILY-PAD",
           link: "",
           click: this.openModalApply,
           class: "square-link",
         };
         this.keys[9] = {
-          text: "BASE & PROOF",
+          text: "BASE & PROOF VERIFICATION",
           link: "",
           click: this.openModalProof,
           class: "square-link",
@@ -492,10 +417,17 @@ p {
   line-height: 10px;
   color: hsl(103, 95%, 84%);
 }
-h1 {
+
+@media (min-width: 300px) {
+  #long-text {
+    font-family: "Inconsolata", monospace;
+    font-size: 12px;
+    line-height: 10px;
+    color: hsl(103, 95%, 84%);
+  }
+}
+h1, h3 {
   font-family: "Inconsolata", monospace;
-  font-size: 12px;
-  line-height: 10px;
   color: hsl(103, 95%, 84%);
 }
 @media (min-width: 300px) {
