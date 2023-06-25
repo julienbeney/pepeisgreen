@@ -40,7 +40,7 @@
     </button>
     <div class="justify-center">
       <h1 class="text-3xl font-bold text-center my-4">ABOUT</h1>
-      <h3>WHAT IS #3FB00B?</h3>
+      <h2  class="mx-2">WHAT IS #3FB00B?</h2>
       <p         
         class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
         #3FB00B is a distinctive Proof of Involvement NFT that serves multiple purposes within the $PEPE Community. This NFT not only symbolizes your membership to #3FB00B but also represents your stake in promoting and raising awareness about the community as a whole.
@@ -49,7 +49,7 @@
         <br/>Being an #3FB00B NFT holder not only grants you access to exciting opportunities but also positions you as an active participant and supporter of the $PEPE Community. Your ownership of this unique NFT demonstrates your dedication and involvement in the community's growth and development.
         <br/>
       </p>
-      <h3>WHY WAS #3FB00B CREATED?</h3>
+      <h2>WHY WAS #3FB00B CREATED?</h2>
       <p    
         class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
         #3FB00B was created as a dedicated sub-community within the broader $PEPE ecosystem. Its primary purpose is to foster an environment where passionate $PEPE enthusiasts can come together and actively engage with various artists, creators, and builders. By being a part of #3FB00B, members gain exclusive access to curated Web3 projects, enabling them to discover and support new talent and innovative initiatives.
@@ -83,13 +83,13 @@
     </button>
     <div class="justify-center">
       <h1 class="text-3xl font-bold text-center my-4">PROOF BASE</h1>
-      <h3>BASE #3FB00B</h3>
+      <h2>BASE #3FB00B</h2>
       <p 
         
         class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
         Verify your membership via the “3FB00B” NFT, establishing color consensus and accessing premium features enabled by our organization. Benefit from the proprietary Lily-Pad and have access to unique utilities and experiences.
       </p>
-      <h3>PROOF #3FB00B</h3>
+      <h2>PROOF #3FB00B</h2>
       <p 
       
       class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
@@ -426,7 +426,7 @@ p {
     color: hsl(103, 95%, 84%);
   }
 }
-h1, h3 {
+h1, h2 {
   font-family: "Inconsolata", monospace;
   color: hsl(103, 95%, 84%);
 }
