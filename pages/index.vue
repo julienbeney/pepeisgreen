@@ -40,25 +40,30 @@
     </button>
     <div class="justify-center">
       <h1 class="text-3xl font-bold text-center my-4">ABOUT</h1>
-      <h2  class="mx-2">WHAT IS #3FB00B?</h2>
+      <h2  class="mx-2 text-2xl">WHAT IS #3FB00B?</h2>
       <p         
         class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
         #3FB00B is a distinctive Proof of Involvement NFT that serves multiple purposes within the $PEPE Community. This NFT not only symbolizes your membership to #3FB00B but also represents your stake in promoting and raising awareness about the community as a whole.
-        <br/>The captivating colors used in the #3FB00B NFT artwork are carefully chosen to reflect and embody the essence and spirit of the $PEPE Community. The vibrant and engaging visuals serve as a visual representation of the community's energy, creativity, and shared values.
-        <br/>By owning a #3FB00B NFT, you gain exclusive utilities and opportunities. These utilities may include early access to new features, events, or projects within the $PEPE ecosystem. Additionally, as a #3FB00B NFT holder, you become eligible for future utilities and benefits that are specifically designed to enhance your experience and engagement within the community.
-        <br/>Being an #3FB00B NFT holder not only grants you access to exciting opportunities but also positions you as an active participant and supporter of the $PEPE Community. Your ownership of this unique NFT demonstrates your dedication and involvement in the community's growth and development.
-        <br/>
+        <br/><br/>The captivating colors used in the #3FB00B NFT artwork are carefully chosen to reflect and embody the essence and spirit of the $PEPE Community. The vibrant and engaging visuals serve as a visual representation of the community's energy, creativity, and shared values.
+        <br/><br/>By owning a #3FB00B NFT, you gain exclusive utilities and opportunities. These utilities may include early access to new features, events, or projects within the $PEPE ecosystem. Additionally, as a #3FB00B NFT holder, you become eligible for future utilities and benefits that are specifically designed to enhance your experience and engagement within the community.
+        <br/><br/>Being an #3FB00B NFT holder not only grants you access to exciting opportunities but also positions you as an active participant and supporter of the $PEPE Community. Your ownership of this unique NFT demonstrates your dedication and involvement in the community's growth and development.
+        <br/><br/>
       </p>
-      <h2>WHY WAS #3FB00B CREATED?</h2>
+      <h2 class="mx-2 text-2xl">WHY WAS #3FB00B CREATED?</h2>
       <p    
         class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
         #3FB00B was created as a dedicated sub-community within the broader $PEPE ecosystem. Its primary purpose is to foster an environment where passionate $PEPE enthusiasts can come together and actively engage with various artists, creators, and builders. By being a part of #3FB00B, members gain exclusive access to curated Web3 projects, enabling them to discover and support new talent and innovative initiatives.
-        <br/>The creation of #3FB00B serves as a platform for the community to explore and embrace the diverse and evolving world of digital art and creativity. Through this sub-community, members have the unique opportunity to connect with emerging artists and creators, discovering their unique perspectives and contributing to their growth and success.
-        <br/>By focusing on curated Web3 projects, #3FB00B ensures that the initiatives supported are carefully selected and aligned with the ethos and interests of the $PEPE Community. This curated approach not only helps members find exciting and innovative projects but also empowers artists and builders by providing them with a dedicated audience and potential support for their work.
-        <br/>Overall, #3FB00B aims to create a thriving ecosystem within the $PEPE Community, fostering collaboration, discovery, and support for artists, creators, and builders in the Web3 space.
+        <br/><br/>The creation of #3FB00B serves as a platform for the community to explore and embrace the diverse and evolving world of digital art and creativity. Through this sub-community, members have the unique opportunity to connect with emerging artists and creators, discovering their unique perspectives and contributing to their growth and success.
+        <br/><br/>By focusing on curated Web3 projects, #3FB00B ensures that the initiatives supported are carefully selected and aligned with the ethos and interests of the $PEPE Community. This curated approach not only helps members find exciting and innovative projects but also empowers artists and builders by providing them with a dedicated audience and potential support for their work.
+        <br/><br/>Overall, #3FB00B aims to create a thriving ecosystem within the $PEPE Community, fostering collaboration, discovery, and support for artists, creators, and builders in the Web3 space.
       </p>
       <h1 class="text-3xl font-bold text-center my-4">OUR MISSION</h1>
-
+      <p    
+        class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
+        #3FB00B celebrates the unique cultural impact of $PEPE, along with the diverse and creative world of $PEPE memes. Our mission is to foster a community that cherishes $PEPE’s endearing qualities, embracing the humor, artistic expression, and camaraderie that $PEPE represents.
+        <br/><br/>As a member of #3FB00B we believe that $PEPE is not just a meme; it is a symbol of unity, freedom of expression, and the power of internet culture. Through our project, we strive to promote inclusivity, open dialogue, and mutual respect among $PEPE enthusiasts. We aim to provide a platform where $PEPE enthusiasts can connect, collaborate, and contribute to the ongoing legacy of $PEPE, ensuring its enduring presence in popular culture.
+        <br/><br/>Together, let us embrace the lightheartedness and joy that Pepe represents, while promoting positivity and appreciation for the diverse range of $PEPE memes. $3FB00B is not just a project; it is a declaration of our affiliation, a testament to our commitment, and an homage to the everlasting impact of $PEPE.
+      </p>        
     </div>
   </div>
 
@@ -89,6 +94,7 @@
         class="text-sm md:text-xl text-justify leading-relaxed sm:px-2 p-8 md:px-30 xl:px-40">
         Verify your membership via the “3FB00B” NFT, establishing color consensus and accessing premium features enabled by our organization. Benefit from the proprietary Lily-Pad and have access to unique utilities and experiences.
       </p>
+      <br/>
       <h2>PROOF #3FB00B</h2>
       <p 
       
@@ -416,15 +422,6 @@ p {
   font-size: 12px;
   line-height: 10px;
   color: hsl(103, 95%, 84%);
-}
-
-@media (min-width: 300px) {
-  #long-text {
-    font-family: "Inconsolata", monospace;
-    font-size: 12px;
-    line-height: 10px;
-    color: hsl(103, 95%, 84%);
-  }
 }
 h1, h2 {
   font-family: "Inconsolata", monospace;
