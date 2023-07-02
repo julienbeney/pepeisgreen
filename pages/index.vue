@@ -237,7 +237,7 @@ export default defineComponent({
         };
         this.keys[19] = {
           text: "DISCORD",
-          link: "https://discord.com/invite/Vy2rjVAk",
+          link: "https://discord.com/invite/eS2HVkh8NQ",
           click: () => null,
           class: "square-link",
         };
@@ -286,7 +286,7 @@ export default defineComponent({
         };
         this.keys[17] = {
           text: "DISCORD",
-          link: "https://discord.com/invite/Vy2rjVAk",
+          link: "https://discord.com/invite/eS2HVkh8NQ",
           click: () => null,
           class: "square-link",
         };
@@ -318,7 +318,7 @@ export default defineComponent({
         };
         this.keys[14] = {
           text: "DISCORD",
-          link: "https://discord.com/invite/Vy2rjVAk",
+          link: "https://discord.com/invite/eS2HVkh8NQ",
           click: () => null,
           class: "square-link",
         };
