@@ -49,7 +49,7 @@ body,
   height: 100%;
   margin: 0;
 }
-button, a, span {
+button, a, span, p, h1 {
   font-family: "Inconsolata", monospace;
 }
 .text-green {
