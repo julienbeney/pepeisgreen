@@ -13,7 +13,12 @@
   },
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.0.1",
+    "@openzeppelin/contracts": "^4.9.2",
+    "@truffle/contract": "^4.6.26",
+    "ethers": "^6.6.2",
     "postcss": "^8.4.24",
-    "usemodal-vue3": "^0.3.7"
+    "truffle": "^5.10.2",
+    "usemodal-vue3": "^0.3.7",
+    "web3": "^4.0.2"
   }
 }

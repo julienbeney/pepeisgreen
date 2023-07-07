@@ -1,0 +1,37 @@
+{
+    "contractName": "MyContract",
+    "abi": [
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "name",
+        "outputs": [
+          {
+            "name": "",
+            "type": "string"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function",
+        "signature": "0x06fdde03"
+      }
+    ],
+    "networks": {
+      "5777": {
+        "events": {},
+        "links": {},
+        "address": "0x345ca3e014aaf5dca488057592ee47305d9b3e10",
+        "transactionHash": "0x3d9185672d80d1b37b2e71a2491a8f7c63fbbcd2b4b2f54160e1b3e3b7307f9d"
+      }
+    },
+    "schemaVersion": "3.4.0",
+    "updatedAt": "2023-04-07T09:17:24.501Z",
+    "devdoc": {
+      "methods": {}
+    },
+    "userdoc": {
+      "methods": {}
+    }
+  }
+  
