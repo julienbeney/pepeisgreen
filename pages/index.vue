@@ -243,7 +243,7 @@ export default defineComponent({
         };
         this.keys[14] = {
           text: "MINT",
-          link: "",
+          link: "/mint",
           click: () => null,
           class: "square-link",
         };
@@ -292,7 +292,7 @@ export default defineComponent({
         };
         this.keys[9] = {
           text: "MINT",
-          link: "",
+          link: "/mint",
           click: () => null,
           class: "square-link shadow-inner shadow-2xl",
         };
@@ -331,7 +331,7 @@ export default defineComponent({
 
         this.keys[26] = {
           text: "MINT",
-          link: "",
+          link: "/mint",
           click: () => null,
           class: "square-link shadow-inner shadow-2xl",
         };
